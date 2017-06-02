@@ -10,7 +10,7 @@ function insertarCancha($codigo,$descripcion,$precio,$horai,$horaf,$coordenadas,
 
 function ElimnarCancha($idcancha,$conexion){
 		$query="DELETE FROM `cancha` WHERE idcancha=".$idcancha."";
-				//echo($query);exit;
+				echo($query);exit;
 				$resultado=mysqli_query($conexion,$query);
 }
 ?>
