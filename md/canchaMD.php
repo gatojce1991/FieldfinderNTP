@@ -14,3 +14,4 @@ function ElimnarCancha($idcancha,$conexion){
 				$resultado=mysqli_query($conexion,$query);
 }
 ?>
+/*gato gay*/
