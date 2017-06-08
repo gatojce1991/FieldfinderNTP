@@ -27,4 +27,15 @@ if(isset($_POST['txtFecha'])){
 	$Fecha=$_POST['txtFecha'];
 }
 
+if($procesar=="Ingresar"){
+insertarMensaje($codigo,$email,$descripcion,$contacto,$Fecha,$conexion);
+}
+
+if(isset($_POST['txtIdMensaje'])){
+	$idmensaje=$_POST['txtIdMensaje'];
+}
+if($procesar=="Eliminar"){
+ElimnarMensaje($idmensaje,$conexion);
+}
+
 ?>
